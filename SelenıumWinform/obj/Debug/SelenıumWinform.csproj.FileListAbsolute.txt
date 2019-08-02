@@ -1,0 +1,217 @@
+C:\Users\bilal\OneDrive\Masaüstü\SelenıumWinform\SelenıumWinform\bin\Debug\SelenıumWinform.exe.config
+C:\Users\bilal\OneDrive\Masaüstü\SelenıumWinform\SelenıumWinform\bin\Debug\SelenıumWinform.exe
+C:\Users\bilal\OneDrive\Masaüstü\SelenıumWinform\SelenıumWinform\bin\Debug\SelenıumWinform.pdb
+C:\Users\bilal\OneDrive\Masaüstü\SelenıumWinform\SelenıumWinform\bin\Debug\WebDriver.dll
+C:\Users\bilal\OneDrive\Masaüstü\SelenıumWinform\SelenıumWinform\bin\Debug\WebDriver.xml
+C:\Users\bilal\OneDrive\Masaüstü\SelenıumWinform\SelenıumWinform\obj\Debug\SelenıumWinform.Form1.resources
+C:\Users\bilal\OneDrive\Masaüstü\SelenıumWinform\SelenıumWinform\obj\Debug\SelenıumWinform.Properties.Resources.resources
+C:\Users\bilal\OneDrive\Masaüstü\SelenıumWinform\SelenıumWinform\obj\Debug\SelenıumWinform.csproj.GenerateResource.cache
+C:\Users\bilal\OneDrive\Masaüstü\SelenıumWinform\SelenıumWinform\obj\Debug\SelenıumWinform.csproj.CoreCompileInputs.cache
+C:\Users\bilal\OneDrive\Masaüstü\SelenıumWinform\SelenıumWinform\obj\Debug\SelenıumWinform.csproj.CopyComplete
+C:\Users\bilal\OneDrive\Masaüstü\SelenıumWinform\SelenıumWinform\obj\Debug\SelenıumWinform.exe
+C:\Users\bilal\OneDrive\Masaüstü\SelenıumWinform\SelenıumWinform\obj\Debug\SelenıumWinform.pdb
+C:\Users\bilal\OneDrive\Masaüstü\Selenıum ilk sayfa veri çekme\SelenıumWinform\bin\Debug\SelenıumWinform.exe.config
+C:\Users\bilal\OneDrive\Masaüstü\Selenıum ilk sayfa veri çekme\SelenıumWinform\bin\Debug\SelenıumWinform.exe
+C:\Users\bilal\OneDrive\Masaüstü\Selenıum ilk sayfa veri çekme\SelenıumWinform\bin\Debug\SelenıumWinform.pdb
+C:\Users\bilal\OneDrive\Masaüstü\Selenıum ilk sayfa veri çekme\SelenıumWinform\bin\Debug\WebDriver.dll
+C:\Users\bilal\OneDrive\Masaüstü\Selenıum ilk sayfa veri çekme\SelenıumWinform\bin\Debug\WebDriver.xml
+C:\Users\bilal\OneDrive\Masaüstü\Selenıum ilk sayfa veri çekme\SelenıumWinform\obj\Debug\SelenıumWinform.csprojAssemblyReference.cache
+C:\Users\bilal\OneDrive\Masaüstü\Selenıum ilk sayfa veri çekme\SelenıumWinform\obj\Debug\SelenıumWinform.Form1.resources
+C:\Users\bilal\OneDrive\Masaüstü\Selenıum ilk sayfa veri çekme\SelenıumWinform\obj\Debug\SelenıumWinform.Properties.Resources.resources
+C:\Users\bilal\OneDrive\Masaüstü\Selenıum ilk sayfa veri çekme\SelenıumWinform\obj\Debug\SelenıumWinform.csproj.GenerateResource.cache
+C:\Users\bilal\OneDrive\Masaüstü\Selenıum ilk sayfa veri çekme\SelenıumWinform\obj\Debug\SelenıumWinform.csproj.CoreCompileInputs.cache
+C:\Users\bilal\OneDrive\Masaüstü\Selenıum ilk sayfa veri çekme\SelenıumWinform\obj\Debug\SelenıumWinform.csproj.CopyComplete
+C:\Users\bilal\OneDrive\Masaüstü\Selenıum ilk sayfa veri çekme\SelenıumWinform\obj\Debug\SelenıumWinform.exe
+C:\Users\bilal\OneDrive\Masaüstü\Selenıum ilk sayfa veri çekme\SelenıumWinform\obj\Debug\SelenıumWinform.pdb
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\SelenıumWinform.exe.config
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\SelenıumWinform.exe
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\SelenıumWinform.pdb
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\WebDriver.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\WebDriver.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\obj\Debug\SelenıumWinform.Form1.resources
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\obj\Debug\SelenıumWinform.Properties.Resources.resources
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\obj\Debug\SelenıumWinform.csproj.GenerateResource.cache
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\obj\Debug\SelenıumWinform.csproj.CoreCompileInputs.cache
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\obj\Debug\SelenıumWinform.csproj.CopyComplete
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\obj\Debug\SelenıumWinform.exe
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\obj\Debug\SelenıumWinform.pdb
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\obj\Debug\SelenıumWinform.csprojAssemblyReference.cache
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.Data.v18.1.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.Printing.v18.1.Core.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.Sparkline.v18.1.Core.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.Utils.v18.1.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.XtraEditors.v18.1.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.Pdf.v18.1.Core.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.Data.v18.1.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.Printing.v18.1.Core.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.Sparkline.v18.1.Core.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.Utils.v18.1.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.XtraEditors.v18.1.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.Pdf.v18.1.Core.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\de\DevExpress.Data.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\es\DevExpress.Data.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ja\DevExpress.Data.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ru\DevExpress.Data.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\de\DevExpress.Printing.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\es\DevExpress.Printing.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ja\DevExpress.Printing.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ru\DevExpress.Printing.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\de\DevExpress.Sparkline.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\es\DevExpress.Sparkline.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ja\DevExpress.Sparkline.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ru\DevExpress.Sparkline.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\de\DevExpress.Utils.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\es\DevExpress.Utils.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ja\DevExpress.Utils.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ru\DevExpress.Utils.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\de\DevExpress.XtraEditors.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\es\DevExpress.XtraEditors.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ja\DevExpress.XtraEditors.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ru\DevExpress.XtraEditors.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\de\DevExpress.Pdf.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\es\DevExpress.Pdf.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ja\DevExpress.Pdf.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ru\DevExpress.Pdf.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\obj\Debug\SelenıumWinform.SplashScreen1.resources
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\obj\Debug\SelenıumWinform.exe.licenses
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\obj\Debug\SelenıumWinform.WaitForm1.resources
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.XtraGrid.v18.1.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.XtraLayout.v18.1.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.XtraPrinting.v18.1.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.XtraBars.v18.1.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.RichEdit.v18.1.Core.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.XtraTreeList.v18.1.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.Office.v18.1.Core.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.Images.v18.1.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.XtraGrid.v18.1.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.XtraLayout.v18.1.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.XtraPrinting.v18.1.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.XtraBars.v18.1.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.RichEdit.v18.1.Core.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.XtraTreeList.v18.1.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\DevExpress.Office.v18.1.Core.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\de\DevExpress.XtraGrid.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\es\DevExpress.XtraGrid.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ja\DevExpress.XtraGrid.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ru\DevExpress.XtraGrid.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\de\DevExpress.XtraLayout.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\es\DevExpress.XtraLayout.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ja\DevExpress.XtraLayout.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ru\DevExpress.XtraLayout.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\de\DevExpress.XtraPrinting.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\es\DevExpress.XtraPrinting.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ja\DevExpress.XtraPrinting.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ru\DevExpress.XtraPrinting.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\de\DevExpress.XtraBars.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\es\DevExpress.XtraBars.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ja\DevExpress.XtraBars.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ru\DevExpress.XtraBars.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\de\DevExpress.RichEdit.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\es\DevExpress.RichEdit.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ja\DevExpress.RichEdit.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ru\DevExpress.RichEdit.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\de\DevExpress.XtraTreeList.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\es\DevExpress.XtraTreeList.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ja\DevExpress.XtraTreeList.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ru\DevExpress.XtraTreeList.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\de\DevExpress.Office.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\es\DevExpress.Office.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ja\DevExpress.Office.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find\SelenıumWinform\bin\Debug\ru\DevExpress.Office.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\obj\Debug\SelenıumWinform.Properties.Resources.resources
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\obj\Debug\SelenıumWinform.csproj.GenerateResource.cache
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\obj\Debug\SelenıumWinform.exe.licenses
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\obj\Debug\SelenıumWinform.csproj.CoreCompileInputs.cache
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\obj\Debug\SelenıumWinform.exe
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\obj\Debug\SelenıumWinform.pdb
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\SelenıumWinform.exe.config
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\SelenıumWinform.exe
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\SelenıumWinform.pdb
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.Data.v18.1.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.Printing.v18.1.Core.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.Sparkline.v18.1.Core.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.Utils.v18.1.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.XtraEditors.v18.1.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.XtraGrid.v18.1.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.XtraLayout.v18.1.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.XtraPrinting.v18.1.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\WebDriver.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.Pdf.v18.1.Core.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.XtraBars.v18.1.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.RichEdit.v18.1.Core.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.XtraTreeList.v18.1.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.Office.v18.1.Core.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.Images.v18.1.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.Data.v18.1.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.Printing.v18.1.Core.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.Sparkline.v18.1.Core.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.Utils.v18.1.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.XtraEditors.v18.1.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.XtraGrid.v18.1.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.XtraLayout.v18.1.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.XtraPrinting.v18.1.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\WebDriver.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.Pdf.v18.1.Core.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.XtraBars.v18.1.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.RichEdit.v18.1.Core.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.XtraTreeList.v18.1.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\DevExpress.Office.v18.1.Core.xml
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\de\DevExpress.Data.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\es\DevExpress.Data.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ja\DevExpress.Data.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ru\DevExpress.Data.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\de\DevExpress.Printing.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\es\DevExpress.Printing.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ja\DevExpress.Printing.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ru\DevExpress.Printing.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\de\DevExpress.Sparkline.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\es\DevExpress.Sparkline.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ja\DevExpress.Sparkline.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ru\DevExpress.Sparkline.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\de\DevExpress.Utils.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\es\DevExpress.Utils.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ja\DevExpress.Utils.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ru\DevExpress.Utils.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\de\DevExpress.XtraEditors.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\es\DevExpress.XtraEditors.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ja\DevExpress.XtraEditors.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ru\DevExpress.XtraEditors.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\de\DevExpress.XtraGrid.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\es\DevExpress.XtraGrid.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ja\DevExpress.XtraGrid.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ru\DevExpress.XtraGrid.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\de\DevExpress.XtraLayout.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\es\DevExpress.XtraLayout.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ja\DevExpress.XtraLayout.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ru\DevExpress.XtraLayout.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\de\DevExpress.XtraPrinting.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\es\DevExpress.XtraPrinting.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ja\DevExpress.XtraPrinting.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ru\DevExpress.XtraPrinting.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\de\DevExpress.Pdf.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\es\DevExpress.Pdf.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ja\DevExpress.Pdf.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ru\DevExpress.Pdf.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\de\DevExpress.XtraBars.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\es\DevExpress.XtraBars.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ja\DevExpress.XtraBars.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ru\DevExpress.XtraBars.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\de\DevExpress.RichEdit.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\es\DevExpress.RichEdit.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ja\DevExpress.RichEdit.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ru\DevExpress.RichEdit.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\de\DevExpress.XtraTreeList.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\es\DevExpress.XtraTreeList.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ja\DevExpress.XtraTreeList.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ru\DevExpress.XtraTreeList.v18.1.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\de\DevExpress.Office.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\es\DevExpress.Office.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ja\DevExpress.Office.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\bin\Debug\ru\DevExpress.Office.v18.1.Core.resources.dll
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\obj\Debug\SelenıumWinform.csproj.CopyComplete
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\obj\Debug\SelenıumWinform.csproj.ResolveComReference.cache
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\obj\Debug\SelenıumWinform.csprojAssemblyReference.cache
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\obj\Debug\SelenıumWinform.FrmBot.resources
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\obj\Debug\SelenıumWinform.WaitForm1.resources
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\obj\Debug\SelenıumWinform.LoginScreen.resources
+C:\Users\bilal\OneDrive\Masaüstü\Staj Uygulamalarım\Selenıum find-tüm veri\SelenıumWinform\obj\Debug\SelenıumWinform.IlceScreen.resources
