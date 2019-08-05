@@ -31,17 +31,14 @@
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBot));
             this.btnSirketGetir = new DevExpress.XtraEditors.SimpleButton();
-            this.lblSirketSayi = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.CmbIl = new DevExpress.XtraEditors.ComboBoxEdit();
             this.CmbIlce = new DevExpress.XtraEditors.ComboBoxEdit();
             this.lblIlce = new System.Windows.Forms.Label();
-            this.chTaramaSayisi = new DevExpress.XtraEditors.CheckEdit();
             this.cmbSayfa = new DevExpress.XtraEditors.ComboBoxEdit();
             this.lblSayfa = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.CmbIl.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CmbIlce.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chTaramaSayisi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSayfa.Properties)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,7 +54,7 @@
             this.btnSirketGetir.AppearanceHovered.Options.UseFont = true;
             this.btnSirketGetir.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.btnSirketGetir.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSirketGetir.ImageOptions.Image")));
-            this.btnSirketGetir.Location = new System.Drawing.Point(391, 202);
+            this.btnSirketGetir.Location = new System.Drawing.Point(390, 159);
             this.btnSirketGetir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSirketGetir.Name = "btnSirketGetir";
             this.btnSirketGetir.Size = new System.Drawing.Size(227, 65);
@@ -65,19 +62,6 @@
             this.btnSirketGetir.Text = "Şirketleri Tara";
             this.btnSirketGetir.Visible = false;
             this.btnSirketGetir.Click += new System.EventHandler(this.btnSirketGetir_Click);
-            // 
-            // lblSirketSayi
-            // 
-            this.lblSirketSayi.AutoSize = true;
-            this.lblSirketSayi.BackColor = System.Drawing.Color.Transparent;
-            this.lblSirketSayi.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSirketSayi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblSirketSayi.Location = new System.Drawing.Point(272, 271);
-            this.lblSirketSayi.Name = "lblSirketSayi";
-            this.lblSirketSayi.Size = new System.Drawing.Size(278, 32);
-            this.lblSirketSayi.TabIndex = 32;
-            this.lblSirketSayi.Text = "Gezilen Şirket Sayısı :";
-            this.lblSirketSayi.Visible = false;
             // 
             // label1
             // 
@@ -237,19 +221,6 @@
             this.lblIlce.Text = "Başlangıç İlçesini Seçiniz :";
             this.lblIlce.Visible = false;
             // 
-            // chTaramaSayisi
-            // 
-            this.chTaramaSayisi.Location = new System.Drawing.Point(313, 160);
-            this.chTaramaSayisi.Name = "chTaramaSayisi";
-            this.chTaramaSayisi.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold);
-            this.chTaramaSayisi.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.chTaramaSayisi.Properties.Appearance.Options.UseFont = true;
-            this.chTaramaSayisi.Properties.Appearance.Options.UseForeColor = true;
-            this.chTaramaSayisi.Properties.Caption = "Taranan Sayısını Göster";
-            this.chTaramaSayisi.Size = new System.Drawing.Size(305, 35);
-            this.chTaramaSayisi.TabIndex = 40;
-            this.chTaramaSayisi.Visible = false;
-            // 
             // cmbSayfa
             // 
             this.cmbSayfa.EditValue = "Sayfa Seçiniz";
@@ -300,12 +271,10 @@
             this.ClientSize = new System.Drawing.Size(630, 317);
             this.Controls.Add(this.cmbSayfa);
             this.Controls.Add(this.lblSayfa);
-            this.Controls.Add(this.chTaramaSayisi);
             this.Controls.Add(this.CmbIlce);
             this.Controls.Add(this.lblIlce);
             this.Controls.Add(this.CmbIl);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblSirketSayi);
             this.Controls.Add(this.btnSirketGetir);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -320,10 +289,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.CmbIl.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CmbIlce.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chTaramaSayisi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSayfa.Properties)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -333,8 +300,6 @@
         private DevExpress.XtraEditors.ComboBoxEdit CmbIl;
         private DevExpress.XtraEditors.ComboBoxEdit CmbIlce;
         private System.Windows.Forms.Label lblIlce;
-        private DevExpress.XtraEditors.CheckEdit chTaramaSayisi;
-        public System.Windows.Forms.Label lblSirketSayi;
         private DevExpress.XtraEditors.ComboBoxEdit cmbSayfa;
         private System.Windows.Forms.Label lblSayfa;
     }

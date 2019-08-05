@@ -277,11 +277,7 @@ namespace SelenıumWinform
             else 
             {
                 MessageBox.Show("Bot Çalışırken açılan uygulamaları kapatmayın!","Bilgilendirme Penceresi",MessageBoxButtons.OK,MessageBoxIcon.Information);
-                if (chTaramaSayisi.Checked==true)
-                {
-                    MessageBox.Show("Her 250 Şirkette bir o ana kadar taranan şirket sayısını göreceksiniz", "Bilgilendirme Penceresi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    lblSirketSayi.Visible = true;
-                }
+               
                 SplashScreenManager.ShowForm(typeof(WaitForm1)); //Bekleme Efekti
                 excel.Application exceldosya = new excel.Application();// Excel işlemleri için
                 exceldosya.Visible = true;
@@ -465,11 +461,6 @@ namespace SelenıumWinform
                     try
                     {
                         ToplamSirketSayisi++;
-                        if (ToplamSirketSayisi % 250 == 0 && chTaramaSayisi.Checked == true)
-                        {
-                            lblSirketSayi.Text = "Gezilen Şirket Sayısı:  " + ToplamSirketSayisi;
-                            MessageBox.Show("Gezilen Şirket Sayısı " + ToplamSirketSayisi + " ulaştı", "Bilgilendirme Penceresi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
                         Sirket sirket = new Sirket();// Sirket classı //Excele şirketleri eklemek için
                         sirketUrl = "https://www.find.com.tr/Company/" + StringReplace(sirketler_[sayac].ToLower());//Her şirketin url si
                         driver.Navigate().GoToUrl(sirketUrl);
@@ -499,11 +490,7 @@ namespace SelenıumWinform
                         driver.Quit();
                         GirisYap(3000);
                         ToplamSirketSayisi++;
-                        if (ToplamSirketSayisi % 250 == 0 && chTaramaSayisi.Checked == true)
-                        {
-                            lblSirketSayi.Text = "Gezilen Şirket Sayısı:  " + ToplamSirketSayisi;
-                            MessageBox.Show("Gezilen Şirket Sayısı " + ToplamSirketSayisi + " ulaştı", "Bilgilendirme Penceresi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
+                      
                         Sirket sirket = new Sirket();// Sirket classı //Excele şirketleri eklemek için
                         sirketUrl = "https://www.find.com.tr/Company/" + StringReplace(sirketler_[sayac].ToLower());//Her şirketin url si
                         driver.Navigate().GoToUrl(sirketUrl);
@@ -562,11 +549,7 @@ namespace SelenıumWinform
                         try
                         {
                             ToplamSirketSayisi++;
-                            if (ToplamSirketSayisi % 250 == 0 && chTaramaSayisi.Checked == true)
-                            {
-                                lblSirketSayi.Text = "Gezilen Şirket Sayısı:  " + ToplamSirketSayisi;
-                                MessageBox.Show("Gezilen Şirket Sayısı " + ToplamSirketSayisi + " ulaştı", "Bilgilendirme Penceresi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            }
+                            
                             Sirket sirket = new Sirket();//Yeni şirket nesnesi
                             sirketUrl = "https://www.find.com.tr/Company/" + StringReplace(sirketler_[sayac].ToLower());//Her şirketin url si
                             driver.Navigate().GoToUrl(sirketUrl);
@@ -596,11 +579,7 @@ namespace SelenıumWinform
                             driver.Quit();
                             GirisYap(3000);
                             ToplamSirketSayisi++;
-                            if (ToplamSirketSayisi % 250 == 0 && chTaramaSayisi.Checked == true)
-                            {
-                                lblSirketSayi.Text = "Gezilen Şirket Sayısı:  " + ToplamSirketSayisi;
-                                MessageBox.Show("Gezilen Şirket Sayısı " + ToplamSirketSayisi + " ulaştı", "Bilgilendirme Penceresi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            }
+                         
                             Sirket sirket = new Sirket();//Yeni şirket nesnesi
                             sirketUrl = "https://www.find.com.tr/Company/" + StringReplace(sirketler_[sayac].ToLower());//Her şirketin url si
                             driver.Navigate().GoToUrl(sirketUrl);
@@ -674,11 +653,7 @@ namespace SelenıumWinform
                     for (int z = 0; z < sirketler.Count; z++)//Şirket sayısı kadar dönen döngü
                     {
                         ToplamSirketSayisi++;
-                        if (ToplamSirketSayisi % 250 == 0 && chTaramaSayisi.Checked == true)
-                        {
-                            lblSirketSayi.Text = "Gezilen Şirket Sayısı:  " + ToplamSirketSayisi;
-                            MessageBox.Show("Gezilen Şirket Sayısı " + ToplamSirketSayisi + " ulaştı", "Bilgilendirme Penceresi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
+                       
                         try
                         {
                             Sirket sirket = new Sirket();
