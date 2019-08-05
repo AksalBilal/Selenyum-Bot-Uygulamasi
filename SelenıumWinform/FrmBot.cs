@@ -36,12 +36,6 @@ namespace SelenıumWinform
         string sirketUrl, yonlendirme;
         bool sayfaKontrol = false, sayfaKontrol2 = false;
         
-
-        private void FrmBot_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            MessageBox.Show("Test");
-        }
-
         private void cmbSayfa_SelectedIndexChanged(object sender, EventArgs e)
         {
             btnSirketGetir.Visible = true;
@@ -58,8 +52,19 @@ namespace SelenıumWinform
                 {
                     CmbIlce.Properties.Items.Clear();
                 }
+            try
+            {
                 string link = @"https://www.find.com.tr/Search";
                 driver.Navigate().GoToUrl(link);
+            }
+            catch (Exception)
+            {
+                driver.Quit();
+                GirisYap(3000);
+                string link = @"https://www.find.com.tr/Search";
+                driver.Navigate().GoToUrl(link);
+            }
+                
                 for (int i = CmbIl.SelectedIndex + 1; i <= 81;)//İL Sayısı kadar döngü
                 {
                     if (i <= 9)//9 dan küçük id li iller için yapılacaklar
@@ -340,11 +345,25 @@ namespace SelenıumWinform
                                     sayfasayisi = (Convert.ToInt32(ToplamUrun_) / 20) + 1;//toplam sayfa sayısını buldum
                                 }
                             }//ToplamUrun_<999"
-                            yonlendirme = "https://www.find.com.tr/List/TumKategoriler/" + ilce + "-" + il;
-                            driver.Navigate().GoToUrl(yonlendirme);
-                            SayfaGez(Sayfa1, Sirketler);//Sayfa içerisinde bulunan şirketleri gezen fonksiyon
-                            string sayfaurl2 = "https://www.find.com.tr/Search";
-                            driver.Navigate().GoToUrl(sayfaurl2);
+                            try
+                            {
+                                yonlendirme = "https://www.find.com.tr/List/TumKategoriler/" + ilce + "-" + il + "?Page=" + 1;
+                                driver.Navigate().GoToUrl(yonlendirme);
+                                SayfaGez(Sayfa1, Sirketler);//Sayfa içerisinde bulunan şirketleri gezen fonksiyon
+                                string sayfaurl2 = "https://www.find.com.tr/Search";
+                                driver.Navigate().GoToUrl(sayfaurl2);
+                            }
+                            catch (Exception)
+                            {
+                                driver.Quit();
+                                GirisYap(3000);
+                                yonlendirme = "https://www.find.com.tr/List/TumKategoriler/" + ilce + "-" + il + "?Page=" + 1;
+                                driver.Navigate().GoToUrl(yonlendirme);
+                                SayfaGez(Sayfa1, Sirketler);//Sayfa içerisinde bulunan şirketleri gezen fonksiyon
+                                string sayfaurl2 = "https://www.find.com.tr/Search";
+                                driver.Navigate().GoToUrl(sayfaurl2);
+                            }
+                           
                            
                         }
                         
@@ -399,11 +418,25 @@ namespace SelenıumWinform
                                     sayfasayisi = (Convert.ToInt32(ToplamUrun_) / 20) + 1;//toplam sayfa sayısını buldum
                                 }
                             }
-                            yonlendirme = "https://www.find.com.tr/List/TumKategoriler/" + ilce + "-" + il + "?Page=" + 1;
-                            driver.Navigate().GoToUrl(yonlendirme);
-                            SayfaGez(Sayfa1, Sirketler);//Sayfa içerisinde bulunan şirketleri gezen fonksiyon
-                            string sayfaurl2 = "https://www.find.com.tr/Search";
-                            driver.Navigate().GoToUrl(sayfaurl2);
+                            try
+                            {
+                                yonlendirme = "https://www.find.com.tr/List/TumKategoriler/" + ilce + "-" + il + "?Page=" + 1;
+                                driver.Navigate().GoToUrl(yonlendirme);
+                                SayfaGez(Sayfa1, Sirketler);//Sayfa içerisinde bulunan şirketleri gezen fonksiyon
+                                string sayfaurl2 = "https://www.find.com.tr/Search";
+                                driver.Navigate().GoToUrl(sayfaurl2);
+                            }
+                            catch (Exception)
+                            {
+                                driver.Quit();
+                                GirisYap(3000);
+                                yonlendirme = "https://www.find.com.tr/List/TumKategoriler/" + ilce + "-" + il + "?Page=" + 1;
+                                driver.Navigate().GoToUrl(yonlendirme);
+                                SayfaGez(Sayfa1, Sirketler);//Sayfa içerisinde bulunan şirketleri gezen fonksiyon
+                                string sayfaurl2 = "https://www.find.com.tr/Search";
+                                driver.Navigate().GoToUrl(sayfaurl2);
+                            }
+                            
                         }
                     }
                 }
@@ -438,10 +471,8 @@ namespace SelenıumWinform
                             MessageBox.Show("Gezilen Şirket Sayısı " + ToplamSirketSayisi + " ulaştı", "Bilgilendirme Penceresi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         Sirket sirket = new Sirket();// Sirket classı //Excele şirketleri eklemek için
-                        Thread.Sleep(500);
                         sirketUrl = "https://www.find.com.tr/Company/" + StringReplace(sirketler_[sayac].ToLower());//Her şirketin url si
                         driver.Navigate().GoToUrl(sirketUrl);
-                        Thread.Sleep(200);
                         sayac++;
                         try
                         {
@@ -474,10 +505,8 @@ namespace SelenıumWinform
                             MessageBox.Show("Gezilen Şirket Sayısı " + ToplamSirketSayisi + " ulaştı", "Bilgilendirme Penceresi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         Sirket sirket = new Sirket();// Sirket classı //Excele şirketleri eklemek için
-                        Thread.Sleep(500);
                         sirketUrl = "https://www.find.com.tr/Company/" + StringReplace(sirketler_[sayac].ToLower());//Her şirketin url si
                         driver.Navigate().GoToUrl(sirketUrl);
-                        Thread.Sleep(200);
                         sayac++;
                         try
                         {
@@ -600,8 +629,19 @@ namespace SelenıumWinform
                     Thread.Sleep(200);
                     if (m == 1)//Sayfa Değiştirme işlemi
                     {
-                        string url = "https://www.find.com.tr/List/TumKategoriler/" + ilce + "-" + il + "?Page=2";//Sayfa Değiştirme urlsi
-                        driver.Navigate().GoToUrl(url);
+                        try
+                        {
+                            string url = "https://www.find.com.tr/List/TumKategoriler/" + ilce + "-" + il + "?Page=2";//Sayfa Değiştirme urlsi
+                            driver.Navigate().GoToUrl(url);
+                        }
+                        catch (Exception)
+                        {
+                            driver.Quit();
+                            GirisYap(4000);
+                            string url = "https://www.find.com.tr/List/TumKategoriler/" + ilce + "-" + il + "?Page=2";//Sayfa Değiştirme urlsi
+                            driver.Navigate().GoToUrl(url);
+                        }
+                       
                     }
                 }
             }
@@ -714,10 +754,7 @@ namespace SelenıumWinform
                         }
                         
                     }
-                    if (a==sayfasayisi)
-                    {
-                        CokSayfa = 0;
-                    }
+                    
                 }
             }
         }
