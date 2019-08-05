@@ -30,15 +30,103 @@ namespace SelenıumWinform
         List<IWebElement> sirketler;//Şirket Listesi
         List<string> sirketler_ = new List<string>();//Şirket Listesi
         List<string> ilceler_ = new List<string>();//ilce Listesi
-        int sayfasayisi, sayac = 0, SirketSayisi = 0, satir = 1, sutun = 1, sayim = 0;//değişkenler
+        int sayfasayisi, sayfasayisi2 = 0, sayac = 0, SirketSayisi = 0, Sayfa2Baslangic, CokSayfa, satir = 1, sutun = 1, sayim = 0;//değişkenler
         public int ToplamSirketSayisi = 0;
         string il,Il,il_,ilce,Ilce;//İl ilçe adları
         string sirketUrl, yonlendirme;
+        bool sayfaKontrol = false, sayfaKontrol2 = false;
         
 
         private void FrmBot_FormClosing(object sender, FormClosingEventArgs e)
         {
             MessageBox.Show("Test");
+        }
+
+        private void cmbSayfa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            btnSirketGetir.Visible = true;
+            chTaramaSayisi.Visible = true;
+        }
+
+        private void CmbIl_SelectedIndexChanged(object sender, EventArgs e)
+        {
+                CmbIlce.Properties.Items.Clear();
+                cmbSayfa.Properties.Items.Clear();
+                CmbIlce.SelectedIndex = -1;
+                SplashScreenManager.ShowForm(typeof(IlceScreen)); //Bekleme Efekti
+                if (CmbIlce.Properties.Items != null)
+                {
+                    CmbIlce.Properties.Items.Clear();
+                }
+                string link = @"https://www.find.com.tr/Search";
+                driver.Navigate().GoToUrl(link);
+                for (int i = CmbIl.SelectedIndex + 1; i <= 81;)//İL Sayısı kadar döngü
+                {
+                    if (i <= 9)//9 dan küçük id li iller için yapılacaklar
+                    {
+                        ilceler = driver.FindElements(By.XPath("//*[@id=0" + i + "]/ol/li/a")).ToList();//İlçe listesi
+                        foreach (var item in ilceler)
+                        {
+                            string[] ilceBul = item.Text.Split(' ');
+                            string[] sayfaBul = item.Text.Replace(")", "(").Split('(');
+
+
+                            CmbIlce.Properties.Items.Add(ilceBul[0]);
+                        }
+                    }
+                    else
+                    {//9 dan büyük id li iller için yapılacaklar
+                        ilceler = driver.FindElements(By.XPath("//*[@id=" + i + "]/ol/li/a")).ToList();//İlçe listesi
+                        foreach (var item in ilceler)
+                        {
+                            string[] ilceBul = item.Text.Split(' ');
+                            CmbIlce.Properties.Items.Add(ilceBul[0]);
+                        }
+                    }
+                    break;
+                }
+                CmbIlce.Visible = true;
+                lblIlce.Visible = true;
+               
+                SplashScreenManager.CloseForm();//Bekleme Efekti bitiş
+           
+        }
+
+        private void CmbIlce_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbSayfa.Properties.Items.Clear();
+            cmbSayfa.SelectedIndex = -1;
+            lblSayfa.Visible = true;
+            cmbSayfa.Visible = true;
+            string[] sayfaBul=  ilceler[CmbIlce.SelectedIndex].Text.Replace(")", "(").Split('(');
+            string ToplamUrun_ = sayfaBul[1];//Yazıdaki toplam ürün adedi
+            if (ToplamUrun_.Contains("."))
+            {
+                string[] SayiBirlestir = ToplamUrun_.Split('.');//Yazıyı istediğim biçimde birleştirmek için ayırdım
+                ToplamUrun_ = SayiBirlestir[0] + SayiBirlestir[1];//yazıyı tekrar birleştirdim
+                if (Convert.ToInt32(ToplamUrun_) % 20 == 0)
+                {
+                    sayfasayisi2 = (Convert.ToInt32(ToplamUrun_) / 20);
+                }
+                else
+                {
+                    sayfasayisi2 = (Convert.ToInt32(ToplamUrun_) / 20) + 1;//toplam sayfa sayısını buldum
+                }
+            }//sayıyı int e çevirme ToplamUrun_>999
+            else
+            {
+                if (Convert.ToInt32(ToplamUrun_) % 20 == 0)
+                { sayfasayisi2 = (Convert.ToInt32(ToplamUrun_) / 20); }
+                else
+                {
+                    sayfasayisi2 = (Convert.ToInt32(ToplamUrun_) / 20) + 1;//toplam sayfa sayısını buldum
+                }
+            }//ToplamUrun_<999"
+            for (int i = 1; i <= sayfasayisi2; i++)
+            {
+                cmbSayfa.Properties.Items.Add(i);
+            }
+
         }
 
         bool telKontrol = false;
@@ -174,52 +262,6 @@ namespace SelenıumWinform
             text = text.Replace("(", "");
             text = text.Replace(")", "");
             return text;
-        }
-        private void btnIlceGetir_Click(object sender, EventArgs e)
-        {
-           
-            if (CmbIl.SelectedIndex == -1)
-            {
-                MessageBox.Show("Lütfen bir İl Seçiniz!");
-            }
-            else
-            {
-                SplashScreenManager.ShowForm(typeof(IlceScreen)); //Bekleme Efekti
-                if (CmbIlce.Properties.Items != null)
-                {
-                    CmbIlce.Properties.Items.Clear();
-                }
-                string link = @"https://www.find.com.tr/Search";
-                driver.Navigate().GoToUrl(link);
-                for (int i = CmbIl.SelectedIndex + 1; i <= 81;)//İL Sayısı kadar döngü
-                {
-                    if (i <= 9)//9 dan küçük id li iller için yapılacaklar
-                    {
-                        ilceler = driver.FindElements(By.XPath("//*[@id=0" + i + "]/ol/li/a")).ToList();//İlçe listesi
-                        foreach (var item in ilceler)
-                        {
-                            string[] ilceBul = item.Text.Split(' ');
-                            CmbIlce.Properties.Items.Add(ilceBul[0]);
-                        }
-                    }
-                    else
-                    {//9 dan büyük id li iller için yapılacaklar
-                        ilceler = driver.FindElements(By.XPath("//*[@id=" + i + "]/ol/li/a")).ToList();//İlçe listesi
-                        foreach (var item in ilceler)
-                        {
-                            string[] ilceBul = item.Text.Split(' ');
-                            CmbIlce.Properties.Items.Add(ilceBul[0]);
-                        }
-                    }
-                    break;
-                }
-                CmbIlce.Visible = true;
-                lblIlce.Visible = true;
-                btnSirketGetir.Visible = true;
-                chTaramaSayisi.Visible = true;
-                SplashScreenManager.CloseForm();//Bekleme Efekti bitiş
-            }
-
         }
         private void btnSirketGetir_Click(object sender, EventArgs e)
         {
@@ -370,6 +412,7 @@ namespace SelenıumWinform
             
         }
         public void SayfaGez(Worksheet Sayfa1, Workbook Sirketler) {
+            int baslangic = Convert.ToInt32(cmbSayfa.Text);
             if (sayfasayisi == 1)
             {
                 if (sirketler != null)
@@ -386,43 +429,93 @@ namespace SelenıumWinform
                 SirketSayisi = sirketler.Count;
                 for (int k = 0; k < SirketSayisi; k++)//Şirket sayısı kadar dönen döngü
                 {
-                    ToplamSirketSayisi++;
-                    if (ToplamSirketSayisi % 250 == 0 && chTaramaSayisi.Checked == true)
-                    {
-                        lblSirketSayi.Text = "Gezilen Şirket Sayısı:  " + ToplamSirketSayisi;
-                        MessageBox.Show("Gezilen Şirket Sayısı " + ToplamSirketSayisi + " ulaştı", "Bilgilendirme Penceresi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    Sirket sirket = new Sirket();// Sirket classı //Excele şirketleri eklemek için
-                    Thread.Sleep(500);
-                    sirketUrl = "https://www.find.com.tr/Company/" + StringReplace(sirketler_[sayac].ToLower());//Her şirketin url si
-                    driver.Navigate().GoToUrl(sirketUrl);
-                    Thread.Sleep(200);
-                    sayac++;
                     try
                     {
-                        VeriCek(sirket);//Sirketin Verilerini Çeken fonksiyon
+                        ToplamSirketSayisi++;
+                        if (ToplamSirketSayisi % 250 == 0 && chTaramaSayisi.Checked == true)
+                        {
+                            lblSirketSayi.Text = "Gezilen Şirket Sayısı:  " + ToplamSirketSayisi;
+                            MessageBox.Show("Gezilen Şirket Sayısı " + ToplamSirketSayisi + " ulaştı", "Bilgilendirme Penceresi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        Sirket sirket = new Sirket();// Sirket classı //Excele şirketleri eklemek için
+                        Thread.Sleep(500);
+                        sirketUrl = "https://www.find.com.tr/Company/" + StringReplace(sirketler_[sayac].ToLower());//Her şirketin url si
+                        driver.Navigate().GoToUrl(sirketUrl);
+                        Thread.Sleep(200);
+                        sayac++;
+                        try
+                        {
+                            VeriCek(sirket);//Sirketin Verilerini Çeken fonksiyon
+                        }
+                        catch (Exception)
+                        {
+                            sirket.SirketTel1 = "-";
+                            sirket.SirketTel2 = "-";
+                        }
+                        if (sirket.SirketTel1 == "-" || sirket.SirketTel2 == "-" || sirket.SirketTel2.Contains("X")) { }//İşe yaramayan şirketlerin elenmesi
+                        else
+                        {
+                            string no1 = "" + sirket.SirketTel1[0] + sirket.SirketTel1[1];//Şirket telefon no kontrolu
+                            string no2 = "" + sirket.SirketTel2[0] + sirket.SirketTel2[1];//Şirket telefon no kontrolu
+                            if (no1 == "05" || no2 == "05")//İşe yarayan şirketlerin alınması için kontrol
+                            {
+                                ExcelDoldur(sirket, Sayfa1, Sirketler);//Verileri excele aktaran fonksiyon
+                            }
+                        }
                     }
                     catch (Exception)
                     {
-                        sirket.SirketTel1 = "-";
-                        sirket.SirketTel2 = "-";
-                    }
-                    if (sirket.SirketTel1 == "-" || sirket.SirketTel2 == "-" || sirket.SirketTel2.Contains("X")) {  }//İşe yaramayan şirketlerin elenmesi
-                    else
-                    {
-                        string no1 = "" + sirket.SirketTel1[0] + sirket.SirketTel1[1];//Şirket telefon no kontrolu
-                        string no2 = "" + sirket.SirketTel2[0] + sirket.SirketTel2[1];//Şirket telefon no kontrolu
-                        if (no1 == "05" || no2 == "05")//İşe yarayan şirketlerin alınması için kontrol
+                        driver.Quit();
+                        GirisYap(3000);
+                        ToplamSirketSayisi++;
+                        if (ToplamSirketSayisi % 250 == 0 && chTaramaSayisi.Checked == true)
                         {
-                            ExcelDoldur(sirket, Sayfa1, Sirketler);//Verileri excele aktaran fonksiyon
+                            lblSirketSayi.Text = "Gezilen Şirket Sayısı:  " + ToplamSirketSayisi;
+                            MessageBox.Show("Gezilen Şirket Sayısı " + ToplamSirketSayisi + " ulaştı", "Bilgilendirme Penceresi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        Sirket sirket = new Sirket();// Sirket classı //Excele şirketleri eklemek için
+                        Thread.Sleep(500);
+                        sirketUrl = "https://www.find.com.tr/Company/" + StringReplace(sirketler_[sayac].ToLower());//Her şirketin url si
+                        driver.Navigate().GoToUrl(sirketUrl);
+                        Thread.Sleep(200);
+                        sayac++;
+                        try
+                        {
+                            VeriCek(sirket);//Sirketin Verilerini Çeken fonksiyon
+                        }
+                        catch (Exception)
+                        {
+                            sirket.SirketTel1 = "-";
+                            sirket.SirketTel2 = "-";
+                        }
+                        if (sirket.SirketTel1 == "-" || sirket.SirketTel2 == "-" || sirket.SirketTel2.Contains("X")) { }//İşe yaramayan şirketlerin elenmesi
+                        else
+                        {
+                            string no1 = "" + sirket.SirketTel1[0] + sirket.SirketTel1[1];//Şirket telefon no kontrolu
+                            string no2 = "" + sirket.SirketTel2[0] + sirket.SirketTel2[1];//Şirket telefon no kontrolu
+                            if (no1 == "05" || no2 == "05")//İşe yarayan şirketlerin alınması için kontrol
+                            {
+                                ExcelDoldur(sirket, Sayfa1, Sirketler);//Verileri excele aktaran fonksiyon
+                            }
                         }
                     }
+                    
                 }
 
             }
             else if (sayfasayisi == 2)// 2 sayfa olunca yapılacaklar
             {
-                for (int m = 1; m <= sayfasayisi; m++)
+                if (sayfaKontrol==false)
+                {
+                    Sayfa2Baslangic = baslangic;
+                    sayfaKontrol = true;
+                    sayfaKontrol2 = true;
+                }
+                else
+                {
+                     Sayfa2Baslangic =1;
+                }
+                for (int m = Sayfa2Baslangic; m <= sayfasayisi; m++)
                 {
                     if (sirketler != null)
                     {
@@ -437,33 +530,70 @@ namespace SelenıumWinform
                     sayac = 0;
                     for (int t = 0; t < sirketler.Count; t++)//şirket sayısı kadar döngü
                     {
-                        ToplamSirketSayisi++;
-                        if (ToplamSirketSayisi % 250 == 0 && chTaramaSayisi.Checked == true)
-                        {
-                            lblSirketSayi.Text = "Gezilen Şirket Sayısı:  " + ToplamSirketSayisi;
-                            MessageBox.Show("Gezilen Şirket Sayısı " + ToplamSirketSayisi + " ulaştı", "Bilgilendirme Penceresi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
-                        Sirket sirket = new Sirket();//Yeni şirket nesnesi
-                        sirketUrl = "https://www.find.com.tr/Company/" + StringReplace(sirketler_[sayac].ToLower());//Her şirketin url si
-                        driver.Navigate().GoToUrl(sirketUrl);
-                        sayac++;
                         try
                         {
-                            VeriCek(sirket);//Sirketin Verilerini Çeken fonksiyon
+                            ToplamSirketSayisi++;
+                            if (ToplamSirketSayisi % 250 == 0 && chTaramaSayisi.Checked == true)
+                            {
+                                lblSirketSayi.Text = "Gezilen Şirket Sayısı:  " + ToplamSirketSayisi;
+                                MessageBox.Show("Gezilen Şirket Sayısı " + ToplamSirketSayisi + " ulaştı", "Bilgilendirme Penceresi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                            Sirket sirket = new Sirket();//Yeni şirket nesnesi
+                            sirketUrl = "https://www.find.com.tr/Company/" + StringReplace(sirketler_[sayac].ToLower());//Her şirketin url si
+                            driver.Navigate().GoToUrl(sirketUrl);
+                            sayac++;
+                            try
+                            {
+                                VeriCek(sirket);//Sirketin Verilerini Çeken fonksiyon
+                            }
+                            catch (Exception)
+                            {
+                                sirket.SirketTel1 = "-";
+                                sirket.SirketTel2 = "-";
+                            }
+                            if (sirket.SirketTel1 == "-" || sirket.SirketTel2 == "-" || sirket.SirketTel2.Contains("X")) { }
+                            else
+                            {
+                                string no1 = "" + sirket.SirketTel1[0] + sirket.SirketTel1[1];//Şirket telefon no kontrolu
+                                string no2 = "" + sirket.SirketTel2[0] + sirket.SirketTel2[1];//Şirket telefon no kontrolu
+                                if (no1 == "05" || no2 == "05")//İşe yarayan şirketlerin alınması için kontrol
+                                {
+                                    ExcelDoldur(sirket, Sayfa1, Sirketler);//Verileri excele aktaran fonksiyon
+                                }
+                            }
                         }
                         catch (Exception)
                         {
-                            sirket.SirketTel1 = "-";
-                            sirket.SirketTel2 = "-";
-                        }
-                        if (sirket.SirketTel1 == "-" || sirket.SirketTel2 == "-" || sirket.SirketTel2.Contains("X"))  {        }
-                        else
-                        {
-                            string no1 = "" + sirket.SirketTel1[0] + sirket.SirketTel1[1];//Şirket telefon no kontrolu
-                            string no2 = "" + sirket.SirketTel2[0] + sirket.SirketTel2[1];//Şirket telefon no kontrolu
-                            if (no1 == "05" || no2 == "05")//İşe yarayan şirketlerin alınması için kontrol
+                            driver.Quit();
+                            GirisYap(3000);
+                            ToplamSirketSayisi++;
+                            if (ToplamSirketSayisi % 250 == 0 && chTaramaSayisi.Checked == true)
                             {
-                                ExcelDoldur(sirket, Sayfa1, Sirketler);//Verileri excele aktaran fonksiyon
+                                lblSirketSayi.Text = "Gezilen Şirket Sayısı:  " + ToplamSirketSayisi;
+                                MessageBox.Show("Gezilen Şirket Sayısı " + ToplamSirketSayisi + " ulaştı", "Bilgilendirme Penceresi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                            Sirket sirket = new Sirket();//Yeni şirket nesnesi
+                            sirketUrl = "https://www.find.com.tr/Company/" + StringReplace(sirketler_[sayac].ToLower());//Her şirketin url si
+                            driver.Navigate().GoToUrl(sirketUrl);
+                            sayac++;
+                            try
+                            {
+                                VeriCek(sirket);//Sirketin Verilerini Çeken fonksiyon
+                            }
+                            catch (Exception)
+                            {
+                                sirket.SirketTel1 = "-";
+                                sirket.SirketTel2 = "-";
+                            }
+                            if (sirket.SirketTel1 == "-" || sirket.SirketTel2 == "-" || sirket.SirketTel2.Contains("X")) { }
+                            else
+                            {
+                                string no1 = "" + sirket.SirketTel1[0] + sirket.SirketTel1[1];//Şirket telefon no kontrolu
+                                string no2 = "" + sirket.SirketTel2[0] + sirket.SirketTel2[1];//Şirket telefon no kontrolu
+                                if (no1 == "05" || no2 == "05")//İşe yarayan şirketlerin alınması için kontrol
+                                {
+                                    ExcelDoldur(sirket, Sayfa1, Sirketler);//Verileri excele aktaran fonksiyon
+                                }
                             }
                         }
                     }
@@ -477,7 +607,17 @@ namespace SelenıumWinform
             }
             else
             {
-                for (int a = 1; a <= sayfasayisi; a++)
+                if (sayfaKontrol2==false)
+                {
+                 CokSayfa = baslangic;
+                 sayfaKontrol2 = true;
+                 sayfaKontrol = true;
+                }
+                else
+                {
+                    CokSayfa = 1;
+                }
+                for (int a = CokSayfa; a <= sayfasayisi; a++)
                 {
                     if (sirketler != null)
                     {
@@ -573,6 +713,10 @@ namespace SelenıumWinform
                             driver.Navigate().GoToUrl(sayfaurl);
                         }
                         
+                    }
+                    if (a==sayfasayisi)
+                    {
+                        CokSayfa = 0;
                     }
                 }
             }
