@@ -31,15 +31,17 @@
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBot));
             this.btnSirketGetir = new DevExpress.XtraEditors.SimpleButton();
-            this.label1 = new System.Windows.Forms.Label();
             this.CmbIl = new DevExpress.XtraEditors.ComboBoxEdit();
             this.CmbIlce = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.lblIlce = new System.Windows.Forms.Label();
             this.cmbSayfa = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.lblIl = new System.Windows.Forms.Label();
+            this.lblIlce = new System.Windows.Forms.Label();
             this.lblSayfa = new System.Windows.Forms.Label();
+            this.ImgResim = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.CmbIl.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CmbIlce.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSayfa.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgResim.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splashScreenManager
@@ -54,31 +56,21 @@
             this.btnSirketGetir.AppearanceHovered.Options.UseFont = true;
             this.btnSirketGetir.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.btnSirketGetir.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSirketGetir.ImageOptions.Image")));
-            this.btnSirketGetir.Location = new System.Drawing.Point(390, 159);
-            this.btnSirketGetir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSirketGetir.Location = new System.Drawing.Point(287, 146);
+            this.btnSirketGetir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSirketGetir.Name = "btnSirketGetir";
-            this.btnSirketGetir.Size = new System.Drawing.Size(227, 65);
+            this.btnSirketGetir.Size = new System.Drawing.Size(235, 75);
             this.btnSirketGetir.TabIndex = 31;
             this.btnSirketGetir.Text = "Şirketleri Tara";
             this.btnSirketGetir.Visible = false;
             this.btnSirketGetir.Click += new System.EventHandler(this.btnSirketGetir_Click);
             // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(12, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(303, 33);
-            this.label1.TabIndex = 33;
-            this.label1.Text = "Başlangıç İlini Seçiniz : ";
-            // 
             // CmbIl
             // 
             this.CmbIl.EditValue = "İl Seçiniz";
             this.CmbIl.ImeMode = System.Windows.Forms.ImeMode.Close;
-            this.CmbIl.Location = new System.Drawing.Point(391, 18);
+            this.CmbIl.Location = new System.Drawing.Point(287, 18);
+            this.CmbIl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CmbIl.Name = "CmbIl";
             this.CmbIl.Properties.Appearance.BackColor = System.Drawing.Color.Gold;
             this.CmbIl.Properties.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -178,7 +170,7 @@
             "OSMANİYE",
             "DÜZCE"});
             this.CmbIl.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.CmbIl.Size = new System.Drawing.Size(227, 30);
+            this.CmbIl.Size = new System.Drawing.Size(235, 26);
             this.CmbIl.TabIndex = 36;
             this.CmbIl.SelectedIndexChanged += new System.EventHandler(this.CmbIl_SelectedIndexChanged);
             // 
@@ -186,7 +178,8 @@
             // 
             this.CmbIlce.EditValue = "İlçe Seçiniz";
             this.CmbIlce.ImeMode = System.Windows.Forms.ImeMode.Close;
-            this.CmbIlce.Location = new System.Drawing.Point(391, 68);
+            this.CmbIlce.Location = new System.Drawing.Point(287, 56);
+            this.CmbIlce.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CmbIlce.Name = "CmbIlce";
             this.CmbIlce.Properties.Appearance.BackColor = System.Drawing.Color.Gold;
             this.CmbIlce.Properties.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -204,28 +197,17 @@
             this.CmbIlce.Properties.DropDownRows = 10;
             this.CmbIlce.Properties.ExportMode = DevExpress.XtraEditors.Repository.ExportMode.DisplayText;
             this.CmbIlce.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.CmbIlce.Size = new System.Drawing.Size(227, 30);
+            this.CmbIlce.Size = new System.Drawing.Size(235, 26);
             this.CmbIlce.TabIndex = 38;
             this.CmbIlce.Visible = false;
             this.CmbIlce.SelectedIndexChanged += new System.EventHandler(this.CmbIlce_SelectedIndexChanged);
-            // 
-            // lblIlce
-            // 
-            this.lblIlce.BackColor = System.Drawing.Color.Transparent;
-            this.lblIlce.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblIlce.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblIlce.Location = new System.Drawing.Point(12, 63);
-            this.lblIlce.Name = "lblIlce";
-            this.lblIlce.Size = new System.Drawing.Size(335, 33);
-            this.lblIlce.TabIndex = 37;
-            this.lblIlce.Text = "Başlangıç İlçesini Seçiniz :";
-            this.lblIlce.Visible = false;
             // 
             // cmbSayfa
             // 
             this.cmbSayfa.EditValue = "Sayfa Seçiniz";
             this.cmbSayfa.ImeMode = System.Windows.Forms.ImeMode.Close;
-            this.cmbSayfa.Location = new System.Drawing.Point(391, 122);
+            this.cmbSayfa.Location = new System.Drawing.Point(287, 94);
+            this.cmbSayfa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbSayfa.Name = "cmbSayfa";
             this.cmbSayfa.Properties.Appearance.BackColor = System.Drawing.Color.Gold;
             this.cmbSayfa.Properties.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -243,46 +225,85 @@
             this.cmbSayfa.Properties.DropDownRows = 10;
             this.cmbSayfa.Properties.ExportMode = DevExpress.XtraEditors.Repository.ExportMode.DisplayText;
             this.cmbSayfa.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbSayfa.Size = new System.Drawing.Size(227, 30);
+            this.cmbSayfa.Size = new System.Drawing.Size(235, 26);
             this.cmbSayfa.TabIndex = 42;
             this.cmbSayfa.Visible = false;
             this.cmbSayfa.SelectedIndexChanged += new System.EventHandler(this.cmbSayfa_SelectedIndexChanged);
             // 
+            // lblIl
+            // 
+            this.lblIl.AutoSize = true;
+            this.lblIl.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIl.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblIl.Location = new System.Drawing.Point(52, 20);
+            this.lblIl.Name = "lblIl";
+            this.lblIl.Size = new System.Drawing.Size(232, 23);
+            this.lblIl.TabIndex = 43;
+            this.lblIl.Text = "Başlangıç İlini Seçiniz :";
+            // 
+            // lblIlce
+            // 
+            this.lblIlce.AutoSize = true;
+            this.lblIlce.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIlce.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblIlce.Location = new System.Drawing.Point(21, 58);
+            this.lblIlce.Name = "lblIlce";
+            this.lblIlce.Size = new System.Drawing.Size(263, 23);
+            this.lblIlce.TabIndex = 44;
+            this.lblIlce.Text = "Başlangıç İlçesini Seçiniz :";
+            this.lblIlce.Visible = false;
+            // 
             // lblSayfa
             // 
-            this.lblSayfa.BackColor = System.Drawing.Color.Transparent;
-            this.lblSayfa.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSayfa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblSayfa.Location = new System.Drawing.Point(12, 118);
+            this.lblSayfa.AutoSize = true;
+            this.lblSayfa.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSayfa.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblSayfa.Location = new System.Drawing.Point(5, 96);
             this.lblSayfa.Name = "lblSayfa";
-            this.lblSayfa.Size = new System.Drawing.Size(373, 33);
-            this.lblSayfa.TabIndex = 41;
+            this.lblSayfa.Size = new System.Drawing.Size(279, 23);
+            this.lblSayfa.TabIndex = 45;
             this.lblSayfa.Text = "Başlangıç Sayfasını Seçiniz :";
             this.lblSayfa.Visible = false;
             // 
+            // ImgResim
+            // 
+            this.ImgResim.EditValue = ((object)(resources.GetObject("ImgResim.EditValue")));
+            this.ImgResim.Location = new System.Drawing.Point(9, 122);
+            this.ImgResim.Name = "ImgResim";
+            this.ImgResim.Properties.Appearance.BackColor = System.Drawing.Color.DarkCyan;
+            this.ImgResim.Properties.Appearance.Options.UseBackColor = true;
+            this.ImgResim.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.ImgResim.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.ImgResim.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
+            this.ImgResim.Size = new System.Drawing.Size(275, 123);
+            this.ImgResim.TabIndex = 46;
+            this.ImgResim.TabStop = true;
+            this.ImgResim.Visible = false;
+            // 
             // FrmBot
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.SystemColors.Window;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.DarkCyan;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(630, 317);
-            this.Controls.Add(this.cmbSayfa);
+            this.ClientSize = new System.Drawing.Size(526, 248);
             this.Controls.Add(this.lblSayfa);
-            this.Controls.Add(this.CmbIlce);
             this.Controls.Add(this.lblIlce);
+            this.Controls.Add(this.lblIl);
+            this.Controls.Add(this.cmbSayfa);
+            this.Controls.Add(this.CmbIlce);
             this.Controls.Add(this.CmbIl);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSirketGetir);
-            this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Controls.Add(this.ImgResim);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "FrmBot";
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Veri Çekme Uygulaması";
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -290,18 +311,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.CmbIl.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CmbIlce.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSayfa.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgResim.Properties)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private DevExpress.XtraEditors.SimpleButton btnSirketGetir;
-        private System.Windows.Forms.Label label1;
         private DevExpress.XtraEditors.ComboBoxEdit CmbIl;
         private DevExpress.XtraEditors.ComboBoxEdit CmbIlce;
-        private System.Windows.Forms.Label lblIlce;
         private DevExpress.XtraEditors.ComboBoxEdit cmbSayfa;
+        private System.Windows.Forms.Label lblIl;
+        private System.Windows.Forms.Label lblIlce;
         private System.Windows.Forms.Label lblSayfa;
+        private DevExpress.XtraEditors.PictureEdit ImgResim;
     }
 }
 

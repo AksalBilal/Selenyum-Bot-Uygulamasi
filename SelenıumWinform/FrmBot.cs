@@ -39,6 +39,7 @@ namespace SelenıumWinform
         private void cmbSayfa_SelectedIndexChanged(object sender, EventArgs e)
         {
             btnSirketGetir.Visible = true;
+            ImgResim.Visible = true;
         }
 
         private void CmbIl_SelectedIndexChanged(object sender, EventArgs e)
