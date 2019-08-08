@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
@@ -15,6 +16,7 @@ using DevExpress.XtraSplashScreen;
 using Microsoft.Office.Interop.Excel;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using DataTable = System.Data.DataTable;
 using  excel=Microsoft.Office.Interop.Excel;
 
 namespace SelenıumWinform
@@ -29,12 +31,13 @@ namespace SelenıumWinform
         List<IWebElement> ilceler;//İlçe listesi
         List<IWebElement> sirketler;//Şirket Listesi
         List<string> sirketler_ = new List<string>();//Şirket Listesi
+        List<string> SirketAdlari = new List<string>();//Şirket Listesi
         List<string> ilceler_ = new List<string>();//ilce Listesi
-        int sayfasayisi, sayfasayisi2 = 0, sayac = 0, SirketSayisi = 0, Sayfa2Baslangic, CokSayfa, satir = 1, sutun = 1, sayim = 0;//değişkenler
+        int sayfasayisi, sayfasayisi2 = 0, sayac = 0, SatirSayisi = 0, SirketSayisi = 0, Sayfa2Baslangic, CokSayfa, satir = 1, sutun = 1, sayim = 0;//değişkenler
         public int ToplamSirketSayisi = 0;
         string il,Il,il_,ilce,Ilce;//İl ilçe adları
-        string sirketUrl, yonlendirme;
-        bool sayfaKontrol = false, sayfaKontrol2 = false;
+        string sirketUrl, yonlendirme, dizin;
+        bool sayfaKontrol = false, sayfaKontrol2 = false, ExcelKontrol = false;
         
         private void cmbSayfa_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -274,16 +277,36 @@ namespace SelenıumWinform
             {
                 MessageBox.Show("Lütfen Bir ilçe seçiniz");
             }
+            else if ( cmbSayfa.SelectedIndex == -1)
+            {
+                MessageBox.Show("Lütfen Bir Sayfa seçiniz");
+            }
             else 
             {
                 MessageBox.Show("Bot Çalışırken açılan uygulamaları kapatmayın!","Bilgilendirme Penceresi",MessageBoxButtons.OK,MessageBoxIcon.Information);
-               
+
+                DosyaYoluAl();
                 SplashScreenManager.ShowForm(typeof(WaitForm1)); //Bekleme Efekti
                 excel.Application exceldosya = new excel.Application();// Excel işlemleri için
                 exceldosya.Visible = true;
+                exceldosya.DisplayAlerts = false;
                 object Missing = Type.Missing;// Excel işlemleri için
-                Workbook Sirketler = exceldosya.Workbooks.Add(Missing);// Excel işlemleri için
+                Workbook Sirketler = exceldosya.Workbooks.Add(dizin);// Excel işlemleri için
                 Worksheet Sayfa1 = (Worksheet)Sirketler.Sheets[1];// Excel işlemleri için
+                SatirSayisiBul();
+                Sirketler.SaveAs(dizin);
+                for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                {
+                    try
+                    {
+                        SirketAdlari.Add(dataGridView1.Rows[i].Cells[4].Value.ToString());
+                    }
+                    catch (Exception)
+                    {
+                        continue;
+                    }
+                    
+                }
                 for (int i = CmbIl.SelectedIndex+1; i <= 81; i++)//İL Sayısı kadar döngü
                 {
                     if (ilceler != null)//listeyi temizleme
@@ -440,6 +463,56 @@ namespace SelenıumWinform
             }
             
         }
+
+        private void DosyaYoluAl()
+        {/*
+            SaveFileDialog save = new SaveFileDialog();
+            save.Title = "Lütfen Kayıt Yerini Seçiniz";
+            save.DefaultExt = "xlsx";
+            save.Filter = "All files (*.*)|*.*";
+            save.CheckFileExists = true;
+            save.CheckPathExists = true;
+            save.ShowDialog();
+            dizin = save.FileName;
+            */
+            OpenFileDialog openKeywordsFileDialog = new OpenFileDialog();
+            openKeywordsFileDialog.Title = "Lütfen Dosyaları Kaydedeceğiniz Excel Dosyasını Seçiniz";
+            openKeywordsFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            openKeywordsFileDialog.Multiselect = false;
+            openKeywordsFileDialog.ValidateNames = true;
+            openKeywordsFileDialog.DereferenceLinks = false; // Will return .lnk in shortcuts.
+            openKeywordsFileDialog.Filter = "Excel |*.xlsx";
+            openKeywordsFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(OpenKeywordsFileDialog_FileOk);
+            var dialogResult = openKeywordsFileDialog.ShowDialog();
+
+
+            void OpenKeywordsFileDialog_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+            {
+                OpenFileDialog fileDialog = sender as OpenFileDialog;
+                string selectedFile = fileDialog.FileName;
+                if (string.IsNullOrEmpty(selectedFile) || selectedFile.Contains(".lnk"))
+                {
+                    MessageBox.Show("Please select a valid Excel File");
+                    e.Cancel = true;
+                }
+                return;
+            }
+            dizin = openKeywordsFileDialog.FileName;
+        }
+
+        private void SatirSayisiBul()
+        {
+            OleDbConnection baglanti = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source="+dizin+"; Extended Properties='Excel 12.0 xml;HDR=YES;'");
+            baglanti.Open();  //www.yazilimkodlama.com
+            OleDbDataAdapter da = new OleDbDataAdapter("SELECT * FROM [Sayfa1$]", baglanti);
+            DataTable dt = new System.Data.DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt.DefaultView;
+            baglanti.Close();
+            SatirSayisi = dataGridView1.Rows.Count + 1;
+            satir = SatirSayisi;
+        }
+
         public void SayfaGez(Worksheet Sayfa1, Workbook Sirketler) {
             int baslangic = Convert.ToInt32(cmbSayfa.Text);
             if (sayfasayisi == 1)
@@ -481,7 +554,18 @@ namespace SelenıumWinform
                             string no2 = "" + sirket.SirketTel2[0] + sirket.SirketTel2[1];//Şirket telefon no kontrolu
                             if (no1 == "05" || no2 == "05")//İşe yarayan şirketlerin alınması için kontrol
                             {
-                                ExcelDoldur(sirket, Sayfa1, Sirketler);//Verileri excele aktaran fonksiyon
+                                foreach (var item in SirketAdlari)
+                                {
+                                    if (item==sirket.SirketAdi)
+                                    {
+                                        ExcelKontrol = true;
+                                    }
+                                }
+                                if (ExcelKontrol==false)
+                                {
+                                    ExcelDoldur(sirket, Sayfa1, Sirketler);//Verileri excele aktaran fonksiyon
+                                }
+                                ExcelKontrol = false;
                             }
                         }
                     }
@@ -511,7 +595,18 @@ namespace SelenıumWinform
                             string no2 = "" + sirket.SirketTel2[0] + sirket.SirketTel2[1];//Şirket telefon no kontrolu
                             if (no1 == "05" || no2 == "05")//İşe yarayan şirketlerin alınması için kontrol
                             {
-                                ExcelDoldur(sirket, Sayfa1, Sirketler);//Verileri excele aktaran fonksiyon
+                                foreach (var item in SirketAdlari)
+                                {
+                                    if (item == sirket.SirketAdi)
+                                    {
+                                        ExcelKontrol = true;
+                                    }
+                                }
+                                if (ExcelKontrol == false)
+                                {
+                                    ExcelDoldur(sirket, Sayfa1, Sirketler);//Verileri excele aktaran fonksiyon
+                                }
+                                ExcelKontrol = false;
                             }
                         }
                     }
@@ -570,7 +665,18 @@ namespace SelenıumWinform
                                 string no2 = "" + sirket.SirketTel2[0] + sirket.SirketTel2[1];//Şirket telefon no kontrolu
                                 if (no1 == "05" || no2 == "05")//İşe yarayan şirketlerin alınması için kontrol
                                 {
-                                    ExcelDoldur(sirket, Sayfa1, Sirketler);//Verileri excele aktaran fonksiyon
+                                    foreach (var item in SirketAdlari)
+                                    {
+                                        if (item == sirket.SirketAdi)
+                                        {
+                                            ExcelKontrol = true;
+                                        }
+                                    }
+                                    if (ExcelKontrol == false)
+                                    {
+                                        ExcelDoldur(sirket, Sayfa1, Sirketler);//Verileri excele aktaran fonksiyon
+                                    }
+                                    ExcelKontrol = false;
                                 }
                             }
                         }
@@ -600,7 +706,18 @@ namespace SelenıumWinform
                                 string no2 = "" + sirket.SirketTel2[0] + sirket.SirketTel2[1];//Şirket telefon no kontrolu
                                 if (no1 == "05" || no2 == "05")//İşe yarayan şirketlerin alınması için kontrol
                                 {
-                                    ExcelDoldur(sirket, Sayfa1, Sirketler);//Verileri excele aktaran fonksiyon
+                                    foreach (var item in SirketAdlari)
+                                    {
+                                        if (item == sirket.SirketAdi)
+                                        {
+                                            ExcelKontrol = true;
+                                        }
+                                    }
+                                    if (ExcelKontrol == false)
+                                    {
+                                        ExcelDoldur(sirket, Sayfa1, Sirketler);//Verileri excele aktaran fonksiyon
+                                    }
+                                    ExcelKontrol = false;
                                 }
                             }
                         }
@@ -677,7 +794,18 @@ namespace SelenıumWinform
                                 string no2 = "" + sirket.SirketTel2[0] + sirket.SirketTel2[1];//Şirket telefon no kontrolu
                                 if (no1 == "05" || no2 == "05")//İşe yarayan şirketlerin alınması için kontrol
                                 {
-                                    ExcelDoldur(sirket, Sayfa1, Sirketler);//Verileri excele aktaran fonksiyon
+                                    foreach (var item in SirketAdlari)
+                                    {
+                                        if (item == sirket.SirketAdi)
+                                        {
+                                            ExcelKontrol = true;
+                                        }
+                                    }
+                                    if (ExcelKontrol == false)
+                                    {
+                                        ExcelDoldur(sirket, Sayfa1, Sirketler);//Verileri excele aktaran fonksiyon
+                                    }
+                                    ExcelKontrol = false;
                                 }
 
                             }
@@ -706,7 +834,18 @@ namespace SelenıumWinform
                                 string no2 = "" + sirket.SirketTel2[0] + sirket.SirketTel2[1];//Şirket telefon no kontrolu
                                 if (no1 == "05" || no2 == "05")//İşe yarayan şirketlerin alınması için kontrol
                                 {
-                                    ExcelDoldur(sirket, Sayfa1, Sirketler);//Verileri excele aktaran fonksiyon
+                                    foreach (var item in SirketAdlari)
+                                    {
+                                        if (item == sirket.SirketAdi)
+                                        {
+                                            ExcelKontrol = true;
+                                        }
+                                    }
+                                    if (ExcelKontrol == false)
+                                    {
+                                        ExcelDoldur(sirket, Sayfa1, Sirketler);//Verileri excele aktaran fonksiyon
+                                    }
+                                    ExcelKontrol = false;
                                 }
 
                             }
@@ -735,7 +874,8 @@ namespace SelenıumWinform
         }
         public void ExcelDoldur(Sirket sirket,Worksheet sayfa1, Workbook Sirketler)//Şirketleri excel tablosuna aktarmak için kullanılan fonksiyon
         {
-                sutunAdlari.Add("İl");//il kolonu
+          
+            sutunAdlari.Add("İl");//il kolonu
                 sutunAdlari.Add("İlçe");//İlçe kolonu
                 sutunAdlari.Add("Şirket Sektör");//Sektor kolonu
                 sutunAdlari.Add("Şirket Alt Sektör");//Alt sektor kolonu

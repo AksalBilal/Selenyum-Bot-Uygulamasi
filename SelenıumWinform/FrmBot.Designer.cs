@@ -38,10 +38,12 @@
             this.lblIlce = new System.Windows.Forms.Label();
             this.lblSayfa = new System.Windows.Forms.Label();
             this.ImgResim = new DevExpress.XtraEditors.PictureEdit();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.CmbIl.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CmbIlce.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSayfa.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgResim.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // splashScreenManager
@@ -170,7 +172,7 @@
             "OSMANİYE",
             "DÜZCE"});
             this.CmbIl.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.CmbIl.Size = new System.Drawing.Size(235, 26);
+            this.CmbIl.Size = new System.Drawing.Size(235, 30);
             this.CmbIl.TabIndex = 36;
             this.CmbIl.SelectedIndexChanged += new System.EventHandler(this.CmbIl_SelectedIndexChanged);
             // 
@@ -197,7 +199,7 @@
             this.CmbIlce.Properties.DropDownRows = 10;
             this.CmbIlce.Properties.ExportMode = DevExpress.XtraEditors.Repository.ExportMode.DisplayText;
             this.CmbIlce.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.CmbIlce.Size = new System.Drawing.Size(235, 26);
+            this.CmbIlce.Size = new System.Drawing.Size(235, 30);
             this.CmbIlce.TabIndex = 38;
             this.CmbIlce.Visible = false;
             this.CmbIlce.SelectedIndexChanged += new System.EventHandler(this.CmbIlce_SelectedIndexChanged);
@@ -225,7 +227,7 @@
             this.cmbSayfa.Properties.DropDownRows = 10;
             this.cmbSayfa.Properties.ExportMode = DevExpress.XtraEditors.Repository.ExportMode.DisplayText;
             this.cmbSayfa.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbSayfa.Size = new System.Drawing.Size(235, 26);
+            this.cmbSayfa.Size = new System.Drawing.Size(235, 30);
             this.cmbSayfa.TabIndex = 42;
             this.cmbSayfa.Visible = false;
             this.cmbSayfa.SelectedIndexChanged += new System.EventHandler(this.cmbSayfa_SelectedIndexChanged);
@@ -237,7 +239,7 @@
             this.lblIl.ForeColor = System.Drawing.Color.DarkRed;
             this.lblIl.Location = new System.Drawing.Point(52, 20);
             this.lblIl.Name = "lblIl";
-            this.lblIl.Size = new System.Drawing.Size(232, 23);
+            this.lblIl.Size = new System.Drawing.Size(288, 29);
             this.lblIl.TabIndex = 43;
             this.lblIl.Text = "Başlangıç İlini Seçiniz :";
             // 
@@ -248,7 +250,7 @@
             this.lblIlce.ForeColor = System.Drawing.Color.DarkRed;
             this.lblIlce.Location = new System.Drawing.Point(21, 58);
             this.lblIlce.Name = "lblIlce";
-            this.lblIlce.Size = new System.Drawing.Size(263, 23);
+            this.lblIlce.Size = new System.Drawing.Size(327, 29);
             this.lblIlce.TabIndex = 44;
             this.lblIlce.Text = "Başlangıç İlçesini Seçiniz :";
             this.lblIlce.Visible = false;
@@ -260,7 +262,7 @@
             this.lblSayfa.ForeColor = System.Drawing.Color.DarkRed;
             this.lblSayfa.Location = new System.Drawing.Point(5, 96);
             this.lblSayfa.Name = "lblSayfa";
-            this.lblSayfa.Size = new System.Drawing.Size(279, 23);
+            this.lblSayfa.Size = new System.Drawing.Size(347, 29);
             this.lblSayfa.TabIndex = 45;
             this.lblSayfa.Text = "Başlangıç Sayfasını Seçiniz :";
             this.lblSayfa.Visible = false;
@@ -280,14 +282,25 @@
             this.ImgResim.TabStop = true;
             this.ImgResim.Visible = false;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(290, 229);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(232, 16);
+            this.dataGridView1.TabIndex = 47;
+            this.dataGridView1.Visible = false;
+            // 
             // FrmBot
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.DarkCyan;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(526, 248);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblSayfa);
             this.Controls.Add(this.lblIlce);
             this.Controls.Add(this.lblIl);
@@ -312,6 +325,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.CmbIlce.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSayfa.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgResim.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -326,6 +340,7 @@
         private System.Windows.Forms.Label lblIlce;
         private System.Windows.Forms.Label lblSayfa;
         private DevExpress.XtraEditors.PictureEdit ImgResim;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
